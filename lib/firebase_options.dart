@@ -49,23 +49,23 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBgwr11WZ-YsJ__M_atcAHsIRPRLBsfm9s',
-    appId: '1:942966405362:web:519ce299191a11b04cf86b',
-    messagingSenderId: '942966405362',
-    projectId: 'teacherapp-8b032',
-    authDomain: 'teacherapp-8b032.firebaseapp.com',
-    databaseURL: 'https://teacherapp-8b032-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'teacherapp-8b032.appspot.com',
-    measurementId: 'G-32EEMJHGGJ',
-  );
+static const FirebaseOptions web = FirebaseOptions(
+  apiKey: 'YOUR_WEB_API_KEY',  // Replace with your Web API key
+  appId: 'YOUR_WEB_APP_ID',  // Replace with your Web App ID
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',  // Replace with your Messaging Sender ID
+  projectId: 'YOUR_PROJECT_ID',  // Replace with your Project ID
+  authDomain: 'YOUR_AUTH_DOMAIN',  // Replace with your Auth Domain
+  databaseURL: 'YOUR_DATABASE_URL',  // Replace with your Database URL
+  storageBucket: 'YOUR_STORAGE_BUCKET',  // Replace with your Storage Bucket
+  measurementId: 'YOUR_MEASUREMENT_ID',  // Replace with your Measurement ID
+);
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCmUeWOboxUXzJhrRXbxPpDG22RiFq4OkY',
-    appId: '1:942966405362:android:8f90a1730df2a1cb4cf86b',
-    messagingSenderId: '942966405362',
-    projectId: 'teacherapp-8b032',
-    databaseURL: 'https://teacherapp-8b032-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'teacherapp-8b032.appspot.com',
-  );
+static const FirebaseOptions android = FirebaseOptions(
+  apiKey: 'YOUR_ANDROID_API_KEY',  // Replace with your Android API key
+  appId: 'YOUR_ANDROID_APP_ID',  // Replace with your Android App ID
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',  // Replace with your Messaging Sender ID
+  projectId: 'YOUR_PROJECT_ID',  // Replace with your Project ID
+  databaseURL: 'YOUR_DATABASE_URL',  // Replace with your Database URL
+  storageBucket: 'YOUR_STORAGE_BUCKET',  // Replace with your Storage Bucket
+);
 }
