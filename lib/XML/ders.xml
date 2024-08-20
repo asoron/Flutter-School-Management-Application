@@ -1,0 +1,318 @@
+<okul>
+  <ogretmenler>
+    <ogretmen>
+      <adSoyad>Ali Çelik</adSoyad>
+      <brans>Matematik</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Ayşe Yilmaz</adSoyad>
+      <brans>Fizik</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Hasan Demir</adSoyad>
+      <brans>Kimya</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Zeynep Korkmaz</adSoyad>
+      <brans>Biyoloji</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Yildirim Yilmaz</adSoyad>
+      <brans>Matematik</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Fatma Öz</adSoyad>
+      <brans>Fizik</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Canan Aksoy</adSoyad>
+      <brans>Kimya</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Mehmet Kaya</adSoyad>
+      <brans>Matematik</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Elif Çelik</adSoyad>
+      <brans>Fizik</brans>
+    </ogretmen>
+    <ogretmen>
+      <adSoyad>Burak Aydın</adSoyad>
+      <brans>Biyoloji</brans>
+    </ogretmen>
+  </ogretmenler>
+  <dersler>
+    <ders>
+      <gun>Pazartesi</gun>
+      <saat>09:00 - 10:00</saat>
+      <sinif>12A</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Mehmet Kaya</ogretmen>
+      <tarih>05/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Pazartesi</gun>
+      <saat>10:00 - 11:00</saat>
+      <sinif>12A</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Ayşe Yilmaz</ogretmen>
+      <tarih>05/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Pazartesi</gun>
+      <saat>11:00 - 12:00</saat>
+      <sinif>12B</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Hasan Demir</ogretmen>
+      <tarih>05/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Pazartesi</gun>
+      <saat>12:00 - 13:00</saat>
+      <sinif>12C</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Zeynep Korkmaz</ogretmen>
+      <tarih>05/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Pazartesi</gun>
+      <saat>13:00 - 14:00</saat>
+      <sinif>12D</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Yildirim Yilmaz</ogretmen>
+      <tarih>05/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Pazartesi</gun>
+      <saat>14:00 - 15:00</saat>
+      <sinif>12E</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Fatma Öz</ogretmen>
+      <tarih>05/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Sali</gun>
+      <saat>09:00 - 10:00</saat>
+      <sinif>12F</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Canan Aksoy</ogretmen>
+      <tarih>06/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Sali</gun>
+      <saat>10:00 - 11:00</saat>
+      <sinif>12G</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Elif Çelik</ogretmen>
+      <tarih>06/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Sali</gun>
+      <saat>11:00 - 12:00</saat>
+      <sinif>12H</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Burak Aydın</ogretmen>
+      <tarih>06/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Sali</gun>
+      <saat>12:00 - 13:00</saat>
+      <sinif>12A</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Ali Çelik</ogretmen>
+      <tarih>06/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Sali</gun>
+      <saat>13:00 - 14:00</saat>
+      <sinif>12B</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Fatma Öz</ogretmen>
+      <tarih>06/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Sali</gun>
+      <saat>14:00 - 15:00</saat>
+      <sinif>12C</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Burak Aydın</ogretmen>
+      <tarih>06/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>09:00 - 10:00</saat>
+      <sinif>12D</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Ali Çelik</ogretmen>
+      <tarih>07/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>10:00 - 11:00</saat>
+      <sinif>12E</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Ayşe Yilmaz</ogretmen>
+      <tarih>07/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>11:00 - 12:00</saat>
+      <sinif>12F</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Hasan Demir</ogretmen>
+      <tarih>07/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>12:00 - 13:00</saat>
+      <sinif>12G</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Zeynep Korkmaz</ogretmen>
+      <tarih>07/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>13:00 - 14:00</saat>
+      <sinif>12H</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Yildirim Yilmaz</ogretmen>
+      <tarih>07/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>14:00 - 15:00</saat>
+      <sinif>12I</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Elif Çelik</ogretmen>
+      <tarih>07/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Perşembe</gun>
+      <saat>09:00 - 10:00</saat>
+      <sinif>12J</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Canan Aksoy</ogretmen>
+      <tarih>08/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Perşembe</gun>
+      <saat>10:00 - 11:00</saat>
+      <sinif>12K</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Burak Aydın</ogretmen>
+      <tarih>08/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Perşembe</gun>
+      <saat>11:00 - 12:00</saat>
+      <sinif>12L</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Ali Çelik</ogretmen>
+      <tarih>08/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Perşembe</gun>
+      <saat>12:00 - 13:00</saat>
+      <sinif>12M</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Ayşe Yilmaz</ogretmen>
+      <tarih>08/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Perşembe</gun>
+      <saat>13:00 - 14:00</saat>
+      <sinif>12N</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Hasan Demir</ogretmen>
+      <tarih>08/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Perşembe</gun>
+      <saat>14:00 - 15:00</saat>
+      <sinif>12O</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Zeynep Korkmaz</ogretmen>
+      <tarih>08/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>09:00 - 10:00</saat>
+      <sinif>12P</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen>Mehmet Kaya</ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>10:00 - 11:00</saat>
+      <sinif>12Q</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Fatma Öz</ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>11:00 - 12:00</saat>
+      <sinif>12R</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Canan Aksoy</ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>12:00 - 13:00</saat>
+      <sinif>12S</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen>Burak Aydın</ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>12:00 - 13:00</saat>
+      <sinif>12B</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen>Canan Aksoy</ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>13:00 - 14:00</saat>
+      <sinif>12T</sinif>
+      <dersAdi>Matematik</dersAdi>
+      <ogretmen></ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>14:00 - 15:00</saat>
+      <sinif>12U</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen>Ayşe Yilmaz</ogretmen>
+      <tarih>09/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>15:00 - 16:00</saat>
+      <sinif>12F</sinif>
+      <dersAdi>Fizik</dersAdi>
+      <ogretmen></ogretmen>
+      <tarih>10/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Cuma</gun>
+      <saat>16:00 - 17:00</saat>
+      <sinif>12V</sinif>
+      <dersAdi>Biyoloji</dersAdi>
+      <ogretmen></ogretmen>
+      <tarih>10/08/2024</tarih>
+    </ders>
+    <ders>
+      <gun>Çarşamba</gun>
+      <saat>15:00 - 16:00</saat>
+      <sinif>12G</sinif>
+      <dersAdi>Kimya</dersAdi>
+      <ogretmen></ogretmen>
+      <tarih>11/08/2024</tarih>
+    </ders>
+  </dersler>
+</okul>

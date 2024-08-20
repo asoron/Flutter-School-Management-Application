@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "942966405362",
+    "firebase_url": "https://teacherapp-8b032-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "teacherapp-8b032",
+    "storage_bucket": "teacherapp-8b032.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942966405362:android:8f90a1730df2a1cb4cf86b",
+        "android_client_info": {
+          "package_name": "com.example.teacher"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmUeWOboxUXzJhrRXbxPpDG22RiFq4OkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

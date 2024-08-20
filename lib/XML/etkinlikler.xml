@@ -1,0 +1,23 @@
+<etkinlikler>
+  <etkinlik>
+    <tarih>01/06/2024</tarih>
+    <etkinlik_adi>SAT Sınavı</etkinlik_adi>
+    <etkinlik_duzenleyen>İngilizce Zümresi</etkinlik_duzenleyen>
+    <etkinlik_yeri>5. Blok</etkinlik_yeri>
+    <etkinlik_saati>14:00</etkinlik_saati>
+  </etkinlik>
+  <etkinlik>
+    <tarih>15/06/2024</tarih>
+    <etkinlik_adi>Yıl Sonu Gösterisi</etkinlik_adi>
+    <etkinlik_duzenleyen>Müzik Kulübü</etkinlik_duzenleyen>
+    <etkinlik_yeri>Konferans Salonu</etkinlik_yeri>
+    <etkinlik_saati>18:00</etkinlik_saati>
+  </etkinlik>
+    <etkinlik>
+    <tarih>17/08/2024</tarih>
+    <etkinlik_adi>Kayalar Toplantısı</etkinlik_adi>
+    <etkinlik_duzenleyen>Burak Kaya</etkinlik_duzenleyen>
+    <etkinlik_yeri>Burak Kaya'nın evi</etkinlik_yeri>
+    <etkinlik_saati>14:00</etkinlik_saati>
+  </etkinlik>
+</etkinlikler>
