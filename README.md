@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed and set up:
 To get started, clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/your-repo/school-management-app.git
+git clone https://github.com/asoron/Flutter-School-Management-Application.git
 cd school-management-app
 ```
 
@@ -69,14 +69,6 @@ Modify your Android project files as follows:
   ```gradle
   dependencies {
     classpath 'com.google.gms:google-services:4.3.10' // Add this line
-  }
-  ```
-- **android/app/build.gradle**:
-  ```gradle
-  apply plugin: 'com.google.gms.google-services' // Add this line at the bottom
-
-  defaultConfig {
-    minSdkVersion 19 // Ensure this is set to at least 19
   }
   ```
 
@@ -207,5 +199,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For any questions or feedback, feel free to reach out to [your-email@example.com].
+For any questions or feedback, feel free to reach out to [asrin-ylmz@hotmail.com].
 
