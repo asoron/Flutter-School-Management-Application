@@ -31,7 +31,7 @@ To get started, clone the repository from GitHub:
 
 ```bash
 git clone https://github.com/asoron/Flutter-School-Management-Application.git
-cd school-management-app
+cd Flutter-School-Management-Application
 ```
 
 ### 2. Opening the Project
