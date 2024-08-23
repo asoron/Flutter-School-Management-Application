@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:142474357275:android:302828fdbf1f672c6966be",
+        "mobilesdk_app_id": "YOUR_ID",
         "android_client_info": {
           "package_name": "com.example.teacher"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBXMZAVtc40Jo6JUUr-TKKFyW90IK84RXY"
+          "current_key": "YOUR_KEY"
         }
       ],
       "services": {
