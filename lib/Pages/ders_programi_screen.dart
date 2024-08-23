@@ -12,15 +12,16 @@ class DersTakvimiScreen extends StatefulWidget {
 class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
   final List<String> _daysOfWeek = ['Saat', 'Pzt', 'Sal', 'Çrş', 'Prş', 'Cum'];
   final List<String> _timeSlots = [
-    '08:00 - 09:00',
-    '09:00 - 10:00',
-    '10:00 - 11:00',
-    '11:00 - 12:00',
-    '12:00 - 13:00',
-    '13:00 - 14:00',
-    '14:00 - 15:00',
-    '15:00 - 16:00',
-    '16:00 - 17:00',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
   ];
 
   List<String> _branslar = [];
@@ -41,13 +42,13 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Ders Takvimi',
+          'Ders Programı',
           style: TextStyle(
-            color: themeNotifier.isDarkMode ? Colors.white : Colors.white,
             fontSize: themeNotifier.fontSize,
           ),
         ),
         backgroundColor: themeNotifier.themeColor,
+        foregroundColor: Colors.white,
       ),
       body: Column(
         children: [
@@ -118,9 +119,7 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
                         dersProgrami, _timeSlots[timeSlotIndex]);
 
                     // Set the height based on the maximum number of lessons
-                    final cellHeight = maxLessons > 1
-                        ? 1.8 * maxLessons // Adjust height based on max lessons
-                        : 1.8;
+                    final cellHeight = 1;
 
                     if (dayIndex == 0) {
                       // This is the first column where time slots are shown
@@ -313,7 +312,7 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
         child: Text(
           timeSlot,
           style: TextStyle(
-            color: Colors.white,
+            color: themeNotifier.isDarkMode ? Colors.white : Colors.grey[700],
             fontWeight: FontWeight.bold,
             fontSize: themeNotifier.fontSize,
           ),
@@ -325,14 +324,12 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
 
   Widget _buildDersCell(
       List<DersProgrami> dersler, ThemeNotifier themeNotifier) {
-    final isEmpty = dersler.isEmpty;
+    final isEmpty = (dersler.isEmpty || _selectedOgretmen == null || _selectedBrans == null);
 
     return Container(
       decoration: BoxDecoration(
         color: isEmpty
-            ? themeNotifier.isDarkMode
-                ? Colors.grey[800]
-                : Colors.grey[200]
+            ? themeNotifier.isDarkMode ? Colors.grey[800] : Colors.grey[200]
             : themeNotifier.themeColor.withOpacity(0.1),
         border: Border.all(color: themeNotifier.themeColor),
         borderRadius: BorderRadius.circular(10.0),
@@ -351,11 +348,9 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
           children: isEmpty
               ? [
                   Text(
-                    'Boş',
+                    '-',
                     style: TextStyle(
-                      color: themeNotifier.isDarkMode
-                          ? Colors.white70
-                          : Colors.grey,
+                      color: themeNotifier.isDarkMode ? Colors.white70 : Colors.grey,
                       fontSize: themeNotifier.fontSize - 2,
                     ),
                     textAlign: TextAlign.center,
@@ -366,8 +361,7 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
                     padding: const EdgeInsets.symmetric(vertical: 2.0),
                     child: Column(
                       children: [
-                        _buildTextWithFitting(
-                            ders.sinif, 10, 12, themeNotifier),
+                        _buildTextWithFitting(ders.sinif, 10, 12, themeNotifier),
                       ],
                     ),
                   );
@@ -410,11 +404,12 @@ class _DersTakvimiScreenState extends State<DersTakvimiScreen> {
           }
         }
 
-        return Text(
+        return Text(  //kutucukların sınıf 
           text,
           style: TextStyle(
-            fontSize: fontSize,
-            color: Colors.white,
+            fontSize: 1.4*fontSize,
+            fontWeight: FontWeight.bold,
+            color: themeNotifier.isDarkMode ? Colors.white : Colors.black,
           ),
           textAlign: TextAlign.center,
         );

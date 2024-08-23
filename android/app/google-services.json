@@ -1,14 +1,13 @@
 {
   "project_info": {
-    "project_number": "942966405362",
-    "firebase_url": "https://teacherapp-8b032-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "teacherapp-8b032",
-    "storage_bucket": "teacherapp-8b032.appspot.com"
+    "project_number": "142474357275",
+    "project_id": "teacher-6fdca",
+    "storage_bucket": "teacher-6fdca.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:942966405362:android:8f90a1730df2a1cb4cf86b",
+        "mobilesdk_app_id": "1:142474357275:android:302828fdbf1f672c6966be",
         "android_client_info": {
           "package_name": "com.example.teacher"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCmUeWOboxUXzJhrRXbxPpDG22RiFq4OkY"
+          "current_key": "AIzaSyBXMZAVtc40Jo6JUUr-TKKFyW90IK84RXY"
         }
       ],
       "services": {

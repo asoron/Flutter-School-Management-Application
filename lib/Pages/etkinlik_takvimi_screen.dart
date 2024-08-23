@@ -119,6 +119,12 @@ class _EtkinlikTakvimiScreenState extends State<EtkinlikTakvimiScreen> {
     });
   }
 
+  void _onPageChanged(DateTime focusedDay) {
+    setState(() {
+      _focusedDay = focusedDay;
+    });
+  }
+
   void _onFormatChanged(CalendarFormat format) {
     setState(() {
       _calendarFormat = format;
@@ -133,6 +139,7 @@ class _EtkinlikTakvimiScreenState extends State<EtkinlikTakvimiScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Etkinlik Takvimi'),
+        foregroundColor: Colors.white,
         backgroundColor: themeNotifier.themeColor,
       ),
       body: Column(
@@ -154,7 +161,7 @@ class _EtkinlikTakvimiScreenState extends State<EtkinlikTakvimiScreen> {
                   },
                 ),
                 Text(
-                  DateFormat('MMMM yyyy').format(_focusedDay),
+                  DateFormat('MMMM yyyy', 'tr_TR').format(_focusedDay),
                   style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
@@ -218,16 +225,19 @@ class _EtkinlikTakvimiScreenState extends State<EtkinlikTakvimiScreen> {
               return isSameDay(_selectedDay, day);
             },
             onDaySelected: _onDaySelected,
+            onPageChanged: _onPageChanged,
             calendarFormat: _calendarFormat,
             onFormatChanged: _onFormatChanged,
+
             eventLoader: (day) {
               return _getEtkinliklerForDay(
                   day); // This will display markers on days with events
             },
+            locale: 'tr_TR', // Use Turkish locale if available
             calendarStyle: CalendarStyle(
               markersMaxCount: 1,
               markerDecoration: BoxDecoration(
-                color: themeNotifier.themeColor,
+                color: Colors.orange,
                 shape: BoxShape.circle,
               ),
               todayDecoration: const BoxDecoration(
@@ -250,6 +260,17 @@ class _EtkinlikTakvimiScreenState extends State<EtkinlikTakvimiScreen> {
             daysOfWeekVisible: false, // Hide the built-in weekday names
             headerVisible: false,
             startingDayOfWeek: StartingDayOfWeek.monday,
+            headerStyle: HeaderStyle(
+              formatButtonVisible: false,
+              titleTextFormatter: (date, locale) =>
+                  DateFormat('MMMM yyyy', 'tr_TR')
+                      .format(date), // Format header in Turkish
+              titleTextStyle: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: themeNotifier.themeColor,
+              ),
+            ),
           ),
           const SizedBox(height: 8.0),
           Expanded(

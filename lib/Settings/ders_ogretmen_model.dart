@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'package:xml/xml.dart' as xml;
+import 'package:shared_preferences/shared_preferences.dart'; // Import shared_preferences for storing last reset date
 
 // Öğretmen sınıfı tanımı
 class Ogretmen {
@@ -196,6 +197,10 @@ Future<void> resetXmlFile() async {
         .writeAsString(xmlDocument.toXmlString(pretty: true, indent: '  '));
 
     print('XML dosyası başarıyla sıfırlandı. Dosya yolu: $path/ders.xml');
+
+    // Sıfırlama tarihini kaydet
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setString('last_reset_date', DateTime.now().toIso8601String());
   } catch (e) {
     print('Veri yükleme hatası: $e');
   }
@@ -298,10 +303,34 @@ Future<void> saveDersProgrami(List<DersProgrami> dersProgramiListesi) async {
   }
 }
 
+// Uygulama açıldığında otomatik reset kontrolü
+Future<void> checkAndResetDatabase() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  String? lastResetDateStr = prefs.getString('last_reset_date');
+  if (lastResetDateStr != null) {
+    DateTime lastResetDate = DateTime.parse(lastResetDateStr);
+    DateTime today = DateTime.now();
+
+    // Eğer son resetleme tarihi bugünden önceyse, resetle
+    if (lastResetDate.year != today.year ||
+        lastResetDate.month != today.month ||
+        lastResetDate.day != today.day) {
+      await resetXmlFile();
+    } else {
+      print('Veritabanı zaten bugün resetlendi, tekrar resetleme yapılmadı.');
+    }
+  } else {
+    // Eğer hiç resetleme yapılmamışsa, resetle
+    await resetXmlFile();
+  }
+}
+
 // Ana fonksiyon
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // Initialize bindings
-  await resetXmlFile(); // Reset XML file after initialization
+  print("Uygulama başlatılıyor...");
+  // Her gün uygulama açıldığında reset kontrolü yap
+  await checkAndResetDatabase();
 
   final ogretmenler = await loadOgretmenler(); // Öğretmenleri yükle
   final dersler = await loadDersProgrami(); // Ders programını yükle

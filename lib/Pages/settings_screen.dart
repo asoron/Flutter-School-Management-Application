@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import '../Settings/theme_notifier.dart';
-import '/Settings/ders_ogretmen_model.dart'; // Import for the resetXmlFile function
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -100,51 +99,6 @@ class SettingsScreen extends StatelessWidget {
                 activeColor: themeColor,
                 inactiveColor: themeColor.withOpacity(0.3),
               ),
-            ),
-            Divider(thickness: 1, color: themeColor.withOpacity(0.5)),
-            ListTile(
-              leading: Icon(Icons.refresh, color: themeColor),
-              title: const Text('Veritabanını Sıfırla'),
-              onTap: () async {
-                // Show confirmation dialog
-                final bool? confirm = await showDialog<bool>(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return AlertDialog(
-                      title: const Text('Veritabanını Sıfırla'),
-                      content: const Text(
-                          'Veritabanını sıfırlamak istediğinizden emin misiniz? Bu işlem geri alınamaz.'),
-                      actions: <Widget>[
-                        TextButton(
-                          child: const Text('İptal'),
-                          onPressed: () {
-                            Navigator.of(context).pop(false);
-                          },
-                        ),
-                        TextButton(
-                          child: const Text('Evet'),
-                          onPressed: () {
-                            Navigator.of(context).pop(true);
-                          },
-                        ),
-                      ],
-                    );
-                  },
-                );
-
-                if (confirm == true) {
-                  // Call the reset function
-                  await resetXmlFile();
-
-                  // Show a confirmation snackbar or dialog
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: const Text('Veritabanı başarıyla sıfırlandı.'),
-                      backgroundColor: themeColor,
-                    ),
-                  );
-                }
-              },
             ),
           ],
         ),
